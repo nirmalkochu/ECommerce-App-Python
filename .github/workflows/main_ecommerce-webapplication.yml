@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - Ecommerce-WebApplication
+name: Build and deploy Python app to Azure Web App - shoppingCart-wb
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_35A88203126F470CB04C70E5501597C0 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_7288A3662C9743DC97AC8AB71DAAAA4A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_BEAE2CAB89C745E38048E8FEBC6A56C0 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_EAD5426D16C347B48D2FBB9D3CAB6590 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A2872AAC6AF145CDB40E7B4137257AD9 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_447BD0891BBF437CA5554615C9C497EA }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'Ecommerce-WebApplication'
+          app-name: 'shoppingCart-wb'
           slot-name: 'Production'
           
