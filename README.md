@@ -1,1 +1,1 @@
-# ECommerce-App-Python
+# ECommerce Application for online shopping using djngo framework.
