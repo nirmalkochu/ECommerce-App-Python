@@ -1,1 +1,1 @@
-# ECommerce Application for online shopping using djngo framework.
+# ECommerce Application for online shopping using django framework.
